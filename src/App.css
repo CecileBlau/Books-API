@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  flex-wrap:wrap ;
+ 
+  
+  
+}
+.bookDiv{
+    border: 2px solid rgb(189, 185, 185);
+	width: 22%;
+	/* height: 68%; */
+	cursor: pointer;
+	margin: 15px;
+	
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.imageStyle{
+	display: flex;
+	align-self: center;
+	height:60%;
+	width: 90%;
+	margin-top: 10px;
+	border-radius: 5px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infoDiv{
+	height:50%;
+	width: 80%;
+  
+}
+
+.navbar{
+	display: flex;
+	flex-direction: column;
+}
+.SearchButton{
+	display: flex;
+
+	
+}
+
+.searchNewest{
+	display: flex;
+	margin-top: 10px;
+	
+}
+
+.formselect{
+	width: 120px;
+	margin-left: 20px;
+}
+
+.form-control{
+	margin-right: 5px;
 }
