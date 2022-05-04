@@ -6,10 +6,9 @@ import Form from 'react-bootstrap/Form'
 function Search(props) {
 
     return (
-        <div className='SearchButton'>
-            <Form.Control onChange={props.handleChange}></Form.Control>
+        <div style={{marginLeft:'20px', width:'70px'}}>
             
-            <Button variant="primary" onClick={props.handleClick}> Search! </Button>
+            <Button class="btn btn-primary" onClick={props.handleClick} style={{width:'100px'}}> Search! </Button>
         </div>
     );
 }

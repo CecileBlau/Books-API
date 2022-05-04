@@ -1,61 +1,151 @@
-.container{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  flex-direction: row;
-  flex-wrap:wrap ;
- 
-  
-  
+
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+
+
+
 }
-.bookDiv{
-    border: 2px solid rgb(189, 185, 185);
+
+.bookDiv {
+	border: 2px solid rgb(189, 185, 185);
 	width: 22%;
 	/* height: 68%; */
 	cursor: pointer;
 	margin: 15px;
-	
+	display: flex;
+	justify-content: space-between;
+
 
 }
-
-
-.imageStyle{
+.card-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.upperBodyCard{
+	display: flex;
+	flex-direction: column;
+	
+}
+.imageStyle {
 	display: flex;
 	align-self: center;
-	height:60%;
-	width: 90%;
-	margin-top: 10px;
+	
+	height: 200px;
+	width: 65%;
+	margin-bottom: 20px;
 	border-radius: 5px;
 
 }
 
-.infoDiv{
-	height:50%;
+.infoDiv {
+	height: 50%;
 	width: 80%;
-  
+
 }
 
-.navbar{
+.navbar {
 	display: flex;
 	flex-direction: column;
 }
-.SearchButton{
-	display: flex;
 
-	
+.SearchButton {
+	display: flex;
+	margin-left: 20px;
+	width: 500px;
+	height: 40px;
+
+
 }
 
-.searchNewest{
+.searchNewest {
 	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+
+	height: 100px;
+	width: 900px;
+
+}
+.searchNewestUpper{
+	margin-top: 5px;
+	justify-content: center;
+}
+.newestAndPurchaseDiv{
+	display: flex;
+	justify-content: center;
 	margin-top: 10px;
 	
 }
 
-.formselect{
+.formselect {
 	width: 120px;
 	margin-left: 20px;
 }
 
-.form-control{
+.form-control {
 	margin-right: 5px;
+}
+
+.infoDescription  {
+	background-color:lightgray;
+	z-index: 2;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 400px;
+	overflow-y: auto;
+	display: flex; 
+	top:50px ;
+	left:25%;
+	text-align: center;
+	border-radius:0.25rem
+
+}
+.cardTitle{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	
+	
+	
+}
+
+.informationDescription{
+	padding: 20px;
+}
+
+.buttonInfoDescription{
+position: absolute;	
+ top: 0px;
+ right: 0px;
+ width: 40px;
+	
+	
+
+}
+
+
+.infoAndPurchase{
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	justify-content: flex-end;
+	
+
+}
+
+.buttonInfo{
+	color: blue;
+	font-weight: 500;
+}
+.buttonInfo:hover{
+	color: gray;
+	font-weight: 500;
 }
